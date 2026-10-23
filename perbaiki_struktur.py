@@ -16,7 +16,7 @@ from pathlib import Path
 
 EXT = {".jpg", ".jpeg", ".png", ".bmp", ".webp"}
 SUBJEK = ["roif", "rafi", "adit"]
-UNKNOWN = ["adit"]  # subjek yang tidak punya gallery -> dijadikan orang asing
+UNKNOWN = []  # subjek yang tidak punya gallery -> dijadikan orang asing
 
 # kode (huruf kecil, persis seperti di nama file setelah "subjek_") -> kelompok
 KODE = {
