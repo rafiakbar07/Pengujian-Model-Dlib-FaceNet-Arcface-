@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+DATASET/
+hasil/frames_multi/
+hasil/cache_embedding.pkl
