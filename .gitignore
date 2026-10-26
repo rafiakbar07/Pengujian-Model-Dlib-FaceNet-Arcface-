@@ -1,5 +1,15 @@
-venv/
+
+# Python cache
 __pycache__/
-*.pyc
-DATASET/
-hasil/frames_multi/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+
+# Environment variables
+.env
+
+# Temporary embedding cache
+hasil/cache_embedding.pkl
