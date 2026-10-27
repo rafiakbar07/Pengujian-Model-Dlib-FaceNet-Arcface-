@@ -91,9 +91,8 @@ def tahap_ekstrak(data_dir, out_dir):
             t0 = time.perf_counter()
             try:
                 hasil = DeepFace.represent(img_path=str(r.path), model_name=df_name,
-                                           detector_backend=DETECTOR,
-                                           enforce_detection=True, align=ALIGN,
-                                           anti_spoofing=True)
+                           detector_backend=DETECTOR,
+                           enforce_detection=True, align=ALIGN)
                 ms = (time.perf_counter() - t0) * 1000
                 # bila ada beberapa wajah, ambil yang terbesar
                 best = max(hasil, key=lambda h: h["facial_area"]["w"] * h["facial_area"]["h"])
